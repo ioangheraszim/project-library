@@ -8,36 +8,51 @@
 </head>
 <body>
     <main class="container">
-        <div>
-            <h1>The Library Project</h1>
-            <p>Keep a record of your literary adventures.</p>
+        <div class="content">
+            <h1 class="content__title">The Library Project</h1>
+            <p class="content__para">Keep a record of your literary adventures.</p>
         </div>
-        <div>
-            <div>
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text">
+        <div class="form">
+            <div class="form__container">
+                <div class="input-container">
+                    <label class="input-container__label" placeholder="Insert book name here..." for="name">Name</label>
+                    <input class="input-container__input" type="text" id="name">
                 </div>
-                <div>
-                    <label for="name">Author</label>
-                    <input type="text">
+                <div class="input-container">
+                    <label class="input-container__label" placeholder="Insert author name here..." for="author">Author</label>
+                    <input class="input-container__input" type="text" id="author">
                 </div>
-                <div>
-                    <label for="name">Image</label>
-                    <input type="text">
+                <div class="input-container">
+                    <label class="input-container__label" placeholder="Insert image link here..." for="image">Image</label>
+                    <input class="input-container__input" type="text" id="image">
                 </div>
             </div>
-            <div>
+            <div class="button-container">
                 <button>Add Book</button>
             </div>
         </div>
-        <div class="books__container">
-            <h2>The Books</h2>
-            <div class="books__cards">
-                <div class="book__card">
-                    <img src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                    <p class="title">Book Name</p>
-                    <p class="author">Author</p>
+        <div class="books-container">
+            <h2 class="books-container__title">The Books</h2>
+            <div class="book-cards">
+                <div class="book-card">
+                    <img class="book-card__image" src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <p class="book-card__title" class="title">Book Name</p>
+                    <p class="book-card__author" class="author">Author</p>
+                </div>
+                <div class="book-card">
+                    <img class="book-card__image" src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <p class="book-card__title" class="title">Book Name</p>
+                    <p class="book-card__author" class="author">Author</p>
+                </div>
+                <div class="book-card">
+                    <img class="book-card__image" src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <p class="book-card__title" class="title">Book Name</p>
+                    <p class="book-card__author" class="author">Author</p>
+                </div>
+                <div class="book-card">
+                    <img class="book-card__image" src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <p class="book-card__title" class="title">Book Name</p>
+                    <p class="book-card__author" class="author">Author</p>
                 </div>
             </div>
         </div>
