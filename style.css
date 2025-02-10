@@ -124,7 +124,7 @@ select {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   width: 100%;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .book-card {
@@ -136,6 +136,12 @@ select {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
+.book-card:hover {
+  transform: scale(1.1);
+  transition: transform ease-in-out 300ms;
+  cursor: pointer;
+}
+
 .book-card__image {
   border-radius: 10px;
   margin: 0rem 0 1rem 0;
@@ -144,4 +150,21 @@ select {
 .book-card__title {
   font-weight: 500;
   margin: 1rem 0;
+}
+
+.book-card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-card__delete-btn {
+  border: none;
+  outline: none;
+  color: var(--white);
+  background-color: red;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  float: right;
+  cursor: pointer;
 }
